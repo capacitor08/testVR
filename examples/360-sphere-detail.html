@@ -19,11 +19,11 @@
     (function(window, videojs) {
       var player = window.player = videojs('videojs-vr-player');
       player.mediainfo = player.mediainfo || {};
-      player.mediainfo.projection = '360';
+      player.mediainfo.projection = 'SPHERE';
 
       // AUTO is the default and looks at mediainfo
       var vr = window.vr = player.vr({
-        projection: 'AUTO',
+        projection: '360_LR',
         debug: true,
         forceCardboard: false,
         sphereDetail: 64,
